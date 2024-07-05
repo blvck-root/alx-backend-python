@@ -3,14 +3,5 @@
 
 
 def add(a: int, b: float) -> float:
-    """
-    Type-annotated add function.
-
-    Args:
-        a (int): The first number.
-        b (float): The second number.
-
-    Returns:
-        float: The sum of a and b.
-    """
+    """Returns sum of two floats."""
     return a + b
