@@ -22,7 +22,7 @@ class TestGithubOrgClient(unittest.TestCase):
         """
         test_class = GithubOrgClient(org_name)
         test_class.org()
-        mock.called_with_once(test_class.ORG_URL.format(org=org_name))
+        mock.assert_called_once_with(test_class.ORG_URL.format(org=org_name))
 
     def test_public_repos_url(self):
         """Test TestGithubOrgClient.public_repos_url
