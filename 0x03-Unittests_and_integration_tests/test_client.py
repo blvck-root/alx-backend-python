@@ -110,4 +110,4 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
     def tearDownClass(cls):
         """Run after the actual test
         """
-	cls.get_patcher.stop()
+        cls.get_patcher.stop()
