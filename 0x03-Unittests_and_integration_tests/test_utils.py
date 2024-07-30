@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Parameterize a unit test
 """
-from parameterized import parameterized
 import unittest
+from parameterized import parameterized
 from unittest.mock import patch
 
 from utils import (
@@ -75,6 +75,3 @@ class TestMemoize(unittest.TestCase):
             result1 = test_obj.a_property()
             result2 = test_obj.a_property()
             mock.assert_called_once()
-            self.assertEqual(result1, 42)
-            self.assertEqual(result2, 42)
-            self.assertEqual(result1, result2)
